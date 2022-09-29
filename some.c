@@ -128,7 +128,7 @@ void add(struct Cell **p1)
         }
         else
         {
-            printf("Go fuck yourself\n");
+            printf("No\n");
         }
     }
     else
@@ -171,7 +171,7 @@ void removeCell(struct Cell **p1, int controlled)
             p->n = deleted->n;
         }
         else
-            printf("Zaebal\n");
+            printf("No\n");
         free(deleted);
         deleted = NULL;
     }
@@ -182,7 +182,7 @@ void removeCell(struct Cell **p1, int controlled)
     }
     else
     {
-        printf("SYKA DA NE4EGO UDALYAT' DOLBOEB\n");
+        printf("Nothing to delete\n");
     }
 };
 
@@ -192,11 +192,11 @@ void sort(struct Cell **p1)
     struct Cell *p, *start = *p1, *temp = NULL, *aux, *step;
     if (!*p1)
     {
-        printf("TY DOLBOEB 4TOLI EBANNI SYKA ZAEBAL U TEBEA PUSTO V GOLOVE BLEACHI\n");
+        printf("Nothing to sort\n");
     }
     else if (!(*p1)->n)
     {
-        printf("NU I NAHUIA TEBE ODIN ELEMENT SORTIROVAT??????\n");
+        printf("Nothing to sort\n");
     }
     else if (!(*p1)->n->n)
     {
